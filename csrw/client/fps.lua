@@ -2,12 +2,12 @@ CFirstPerson = {
 	enabled,
 }
 
---[[local CFirstPersonLocal = {} -- cała klasa niedostępna z zewnątrz
+local CFirstPersonLocal = {} -- cała klasa niedostępna z zewnątrz
 
 -- tylko do testu
 setFPSLimit(70)
 addEventHandler("onClientResourceStop", root, function() setCursorAlpha(255) end)
---
+
 
 function CFirstPersonLocal:enable()
 	if not CFirstPerson.enabled then
@@ -91,4 +91,4 @@ function CFirstPersonLocal:activateControls(state)
 			setControlState(controls[self], state)
 		end
 	end
-end]]--
+end
